@@ -34,7 +34,7 @@ mpg %>%
 
 ## Install
 
-All instructions can be found at [draculatheme.com/x](https://draculatheme.com/ggplot2).
+All instructions can be found at [draculatheme.com/ggplot2](https://draculatheme.com/ggplot2).
 
 ## Team
 
