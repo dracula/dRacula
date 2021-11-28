@@ -4,6 +4,7 @@ A minimal [Dracula theme](https://draculatheme.com/) and palette for [`ggplot2`]
 
 ```R
 library(ggplot2)
+library(dplyr)
 theme_set(theme_dracula())
 
 mpg %>%
@@ -22,6 +23,7 @@ mpg %>%
 
 ```R
 library(ggplot2)
+library(dplyr)
 theme_set(theme_dracula())
 
 mpg %>%
