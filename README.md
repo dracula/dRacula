@@ -1,8 +1,36 @@
-# Dracula for [X](http://link-to-x.com)
+# Dracula for [ggplot2](http://link-to-x.com)
 
-> A dark theme for [X](http://link-to-x.com).
+A minimal [Dracula theme](https://draculatheme.com/) and palette for [`ggplot2`](https://github.com/tidyverse/ggplot2).
 
-![Screenshot](./screenshot.png)
+```R
+library(ggplot2)
+theme_set(theme_dracula())
+
+mpg %>%
+  group_by(manufacturer) %>%
+  summarize(mean_hwy = mean(hwy)) %>%
+  ggplot(aes(x = manufacturer, y = mean_hwy, fill = manufacturer)) + 
+  geom_col() + theme(legend.position = "none") + coord_flip() +
+  scale_fill_manual(
+    values   = dracula_palette(
+      num_col  = nlevels(factor(mpg$manufacturer)), 
+      var_type = "discrete")
+  )
+```
+![MPG Discrete Bar Chart](img/discrete_mpg.png)
+
+
+```R
+library(ggplot2)
+theme_set(theme_dracula())
+
+mpg %>%
+  ggplot(aes(x = displ, y = cty, color = hwy)) + 
+  geom_point() + 
+  scale_colour_gradientn(colors = dracula_palette(var_type = "continuous"))
+```
+![MPG Continuous Point Chart](img/continuous_mpg.png)
+
 
 ## Install
 
@@ -12,9 +40,9 @@ All instructions can be found at [draculatheme.com/x](https://draculatheme.com/x
 
 This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/template/graphs/contributors).
 
-[![Zeno Rocha](https://github.com/zenorocha.png?size=100)](https://github.com/zenorocha) |
+[![Jordan Bradford](https://github.com/jrdnbradford.png?size=100)](https://github.com/jrdnbradford) |
 --- |
-[Zeno Rocha](https://github.com/zenorocha) |
+[Jordan Bradford](https://github.com/jrdnbradford) |
 
 ## License
 
