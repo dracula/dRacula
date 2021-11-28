@@ -1,4 +1,4 @@
-# Dracula for [ggplot2](http://link-to-x.com)
+# Dracula for [ggplot2](https://github.com/tidyverse/ggplot2)
 
 A minimal [Dracula theme](https://draculatheme.com/) and palette for [`ggplot2`](https://github.com/tidyverse/ggplot2).
 
@@ -34,7 +34,7 @@ mpg %>%
 
 ## Install
 
-All instructions can be found at [draculatheme.com/x](https://draculatheme.com/x).
+All instructions can be found at [draculatheme.com/x](https://draculatheme.com/ggplot2).
 
 ## Team
 
