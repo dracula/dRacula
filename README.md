@@ -1,6 +1,6 @@
 # Dracula for [ggplot2](https://github.com/tidyverse/ggplot2)
 
-A minimal [Dracula theme](https://draculatheme.com/) and palette for [`ggplot2`](https://github.com/tidyverse/ggplot2).
+> A dark theme for [ggplot2](https://github.com/tidyverse/ggplot2) and R palette.
 
 ```R
 library(ggplot2)
@@ -18,8 +18,8 @@ mpg %>%
       var_type = "discrete")
   )
 ```
-![MPG Discrete Bar Chart](img/discrete_mpg.png)
 
+![MPG Discrete Bar Chart](img/discrete_mpg.png)
 
 ```R
 library(ggplot2)
@@ -31,8 +31,8 @@ mpg %>%
   geom_point() + 
   scale_colour_gradientn(colors = dracula_palette(var_type = "continuous"))
 ```
-![MPG Continuous Point Chart](img/continuous_mpg.png)
 
+![MPG Continuous Point Chart](img/continuous_mpg.png)
 
 ## Install
 
@@ -40,7 +40,7 @@ All instructions can be found at [draculatheme.com/ggplot2](https://draculatheme
 
 ## Team
 
-This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/template/graphs/contributors).
+This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/ggplot2/graphs/contributors).
 
 [![Jordan Bradford](https://github.com/jrdnbradford.png?size=100)](https://github.com/jrdnbradford) |
 --- |
