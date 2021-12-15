@@ -33,14 +33,6 @@ mpg %>%
       var_type = "discrete"
     )
   )
-```
-
-![MPG Discrete Bar Chart](img/discrete_mpg.png)
-
-```R
-library(ggplot2)
-library(dplyr)
-theme_set(theme_dracula())
 
 mpg %>%
   ggplot(aes(x = displ, y = cty, color = hwy)) + 
@@ -48,7 +40,7 @@ mpg %>%
   scale_colour_gradientn(colors = dracula_palette(var_type = "continuous"))
 ```
 
-![MPG Continuous Point Chart](img/continuous_mpg.png)
+![MPG Plots](screenshot.png)
 
 ## Install
 
