@@ -3,10 +3,10 @@
 > A dark theme for [ggplot2](https://github.com/tidyverse/ggplot2) and `R` palette.
 
 ## theme_dracula
-[theme_dracula.R](theme_dracula.R) provides a minimal `ggplot2` theme with a Dracula-ish, dark backdrop.
+`theme_dracula()` provides a minimal `ggplot2` theme with a Dracula-ish, dark backdrop.
 
 ## dracula_palette
-[dracula_palette.R](dracula_palette.R) provides the more vibrant colors of Dracula to stand out in front of `theme_dracula()`.
+`dracula_palette()` provides the more vibrant colors of Dracula to stand out in front of `theme_dracula()`.
 
 ## Params
 `dracula_palette <- function(num_cols, var_type = c("discrete", "continuous"))`
