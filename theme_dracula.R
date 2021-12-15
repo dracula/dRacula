@@ -9,7 +9,7 @@ theme_dracula <- function() {
       legend.background = element_rect(fill  = "transparent", color = NA),
       legend.key        = element_rect(fill  = "transparent", color = NA),
       legend.text       = element_text(color = "#f8f8f2"),
-      legend.title      = element_text(face  = "bold", color = "#f8f8f2"),
+      legend.title      = element_text(face  = "bold", color = "#6272A4"),
       
       panel.background  = element_blank(),
       panel.grid        = element_line(color = "#44475a"),
