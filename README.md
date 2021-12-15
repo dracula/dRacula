@@ -2,6 +2,8 @@
 
 > A dark theme for [ggplot2](https://github.com/tidyverse/ggplot2) and `R` palette.
 
+![MPG Plots](screenshot.png)
+
 ## theme_dracula
 `theme_dracula()` provides a minimal `ggplot2` theme with a Dracula-ish, dark backdrop.
 
@@ -39,8 +41,6 @@ mpg %>%
   geom_point() + 
   scale_colour_gradientn(colors = dracula_palette(var_type = "continuous"))
 ```
-
-![MPG Plots](screenshot.png)
 
 ## Install
 
