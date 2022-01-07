@@ -11,31 +11,38 @@
 `dracula_palette()` provides the more vibrant colors of Dracula to stand out in front of `theme_dracula()`.
 
 ## Params
-`dracula_palette <- function(num_cols, var_type = c("discrete", "continuous"))`
+```R
+palette <- dracula_palette(num_cols, var_type = c("discrete", "continuous"))
+```
 
 Param `num_cols` - Number of colors to return. If missing, defaults to the length of the entire palette.
 
 Param `var_type` - Using `var_type = "discrete"` will return the number of colors provided by `num_cols`. `dracula_palette()` will recycle through the palette if `num_cols` > 7. Using `var_type = "continuous"` will create a color ramp with the number of colors provided by `num_cols`.
 
 ## Examples
+See the [beginning of the README](#dracula-for-ggplot2) for the examples produced.
 
 ```R
 library(ggplot2)
 library(dplyr)
 theme_set(theme_dracula())
 
+# Left bar chart
 mpg %>%
   group_by(manufacturer) %>%
   summarize(mean_hwy = mean(hwy)) %>%
   ggplot(aes(x = manufacturer, y = mean_hwy, fill = manufacturer)) + 
-  geom_col() + theme(legend.position = "none") + coord_flip() +
+  theme(legend.position = "none") + 
+  coord_flip() +
+  geom_col() + 
   scale_fill_manual(
-    values   = dracula_palette(
+    values = dracula_palette(
       num_col  = nlevels(factor(mpg$manufacturer)), 
       var_type = "discrete"
     )
   )
 
+# Right scatterplot
 mpg %>%
   ggplot(aes(x = displ, y = cty, color = hwy)) + 
   geom_point() + 
