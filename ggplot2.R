@@ -41,6 +41,8 @@ theme_dracula <- function() {
       axis.text  = element_text(color = "#f8f8f2"),
       axis.title = element_text(face = "bold", color = "#6272A4"),
       
+      strip.text = element_text(face = "bold", colour="#6272A4"),
+      
       legend.background = element_rect(fill  = "transparent", color = NA),
       legend.key        = element_rect(fill  = "transparent", color = NA),
       legend.text       = element_text(color = "#f8f8f2"),
