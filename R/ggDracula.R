@@ -31,11 +31,11 @@ dracula_pal <- c(
 #' dracula_palette(var_type = "continuous")
 dracula_palette <- function(num_cols, var_type = c("discrete", "continuous")) {
   type <- match.arg(var_type)
-  
+
   if (missing(num_cols)) {
     num_cols <- length(dracula_pal)
   }
-  
+
   dracula <- switch(
     type,
     # Recycles palette colors to desired discrete length
@@ -55,29 +55,29 @@ dracula_palette <- function(num_cols, var_type = c("discrete", "continuous")) {
 #' Theme Dracula
 #'
 #' Provides a minimal `ggplot2` theme with a Dracula-ish, dark backdrop.
-#' 
+#'
 #' @export
 #'
 #' @examples
 #' theme_set(theme_dracula())
-theme_dracula <- function() { 
-  theme_minimal(base_size = 12) %+replace% 
+theme_dracula <- function() {
+  theme_minimal(base_size = 12) %+replace%
     theme(
       axis.text  = element_text(color = "#f8f8f2"),
       axis.title = element_text(face = "bold", color = "#6272A4"),
-      
+
       strip.text = element_text(face = "bold", colour="#6272A4"),
-      
+
       legend.background = element_rect(fill  = "transparent", color = NA),
       legend.key        = element_rect(fill  = "transparent", color = NA),
       legend.text       = element_text(color = "#f8f8f2"),
       legend.title      = element_text(face  = "bold", color = "#6272A4"),
-      
+
       panel.background  = element_blank(),
       panel.grid        = element_line(color = "#44475a"),
-      
-      plot.background = element_rect(fill = "#282a36", color = "#44475A"), 
-      
+
+      plot.background = element_rect(fill = "#282a36", color = "#44475A"),
+
       title = element_text(face = "bold", color = "#f8f8f2")
     )
 }
