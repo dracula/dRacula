@@ -1,4 +1,4 @@
-# Dracula for [ggplot2](https://github.com/tidyverse/ggplot2)
+# ggDracula: Dracula for [ggplot2](https://github.com/tidyverse/ggplot2)
 
 > A dark theme for [ggplot2](https://github.com/tidyverse/ggplot2) and `R` palette.
 
