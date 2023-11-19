@@ -12,6 +12,17 @@ dracula_pal <- c(
 )
 
 
+#' Dracula Palette
+#'
+#' @param num_cols Number of colors to return
+#' @param var_type Variable type
+#'
+#' @return Dracula palette
+#' @export
+#'
+#' @examples
+#' dracula_palette(num_col  = nlevels(factor(mpg$manufacturer)), var_type = "discrete")
+#' dracula_palette(var_type = "continuous")
 dracula_palette <- function(num_cols, var_type = c("discrete", "continuous")) {
   type <- match.arg(var_type)
   
@@ -35,6 +46,12 @@ dracula_palette <- function(num_cols, var_type = c("discrete", "continuous")) {
 }
 
 
+#' Theme Dracula
+#'
+#' @export
+#'
+#' @examples
+#' theme_set(theme_dracula())
 theme_dracula <- function() { 
   theme_minimal(base_size = 12) %+replace% 
     theme(
