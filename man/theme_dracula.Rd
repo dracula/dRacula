@@ -7,7 +7,7 @@
 theme_dracula()
 }
 \description{
-Theme Dracula
+Provides a minimal \code{ggplot2} theme with a Dracula-ish, dark backdrop.
 }
 \examples{
 theme_set(theme_dracula())

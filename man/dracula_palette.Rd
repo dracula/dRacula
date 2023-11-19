@@ -7,15 +7,19 @@
 dracula_palette(num_cols, var_type = c("discrete", "continuous"))
 }
 \arguments{
-\item{num_cols}{Number of colors to return}
+\item{num_cols}{Number of colors to return.
+If missing, defaults to the length of the entire palette.}
 
-\item{var_type}{Variable type}
+\item{var_type}{Variable type.
+Using \code{var_type = "discrete"} will return the number of colors provided by \code{num_cols}.
+\code{dracula_palette()} will recycle through the palette if \code{num_cols} > 7.
+Using \code{var_type = "continuous"} will create a color ramp with the number of colors provided by \code{num_cols}.}
 }
 \value{
 Dracula palette
 }
 \description{
-Dracula Palette
+Provides the more vibrant colors of Dracula to stand out in front of \code{theme_dracula()}.
 }
 \examples{
 dracula_palette(num_col  = nlevels(factor(mpg$manufacturer)), var_type = "discrete")
