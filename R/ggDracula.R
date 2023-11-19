@@ -14,8 +14,14 @@ dracula_pal <- c(
 
 #' Dracula Palette
 #'
-#' @param num_cols Number of colors to return
-#' @param var_type Variable type
+#' Provides the more vibrant colors of Dracula to stand out in front of `theme_dracula()`.
+#'
+#' @param num_cols Number of colors to return.
+#'  If missing, defaults to the length of the entire palette.
+#' @param var_type Variable type.
+#'  Using `var_type = "discrete"` will return the number of colors provided by `num_cols`.
+#'  `dracula_palette()` will recycle through the palette if `num_cols` > 7.
+#'  Using `var_type = "continuous"` will create a color ramp with the number of colors provided by `num_cols`.
 #'
 #' @return Dracula palette
 #' @export
@@ -48,6 +54,8 @@ dracula_palette <- function(num_cols, var_type = c("discrete", "continuous")) {
 
 #' Theme Dracula
 #'
+#' Provides a minimal `ggplot2` theme with a Dracula-ish, dark backdrop.
+#' 
 #' @export
 #'
 #' @examples
