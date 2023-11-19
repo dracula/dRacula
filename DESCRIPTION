@@ -13,4 +13,7 @@ RoxygenNote: 7.2.1
 Imports:
     ggplot2,
     dplyr
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
 Roxygen: list(markdown = TRUE)
