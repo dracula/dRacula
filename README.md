@@ -30,7 +30,7 @@ Param `var_type` - Using `var_type = "discrete"` will return the number of color
 
 ## Examples
 
-See the [beginning of the README](#dracula-for-ggplot2) for the examples produced.
+See the [beginning of the README](#ggdracula-dracula-for-ggplot2) for the examples produced.
 
 ```R
 library(ggplot2)
