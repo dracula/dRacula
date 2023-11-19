@@ -27,7 +27,7 @@ dracula_pal <- c(
 #' @export
 #'
 #' @examples
-#' dracula_palette(num_col  = nlevels(factor(mpg$manufacturer)), var_type = "discrete")
+#' dracula_palette(num_cols  = nlevels(factor(mpg$manufacturer)), var_type = "discrete")
 #' dracula_palette(var_type = "continuous")
 dracula_palette <- function(num_cols, var_type = c("discrete", "continuous")) {
   type <- match.arg(var_type)

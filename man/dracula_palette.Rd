@@ -22,6 +22,6 @@ Dracula palette
 Provides the more vibrant colors of Dracula to stand out in front of \code{theme_dracula()}.
 }
 \examples{
-dracula_palette(num_col  = nlevels(factor(mpg$manufacturer)), var_type = "discrete")
+dracula_palette(num_cols  = nlevels(factor(mpg$manufacturer)), var_type = "discrete")
 dracula_palette(var_type = "continuous")
 }

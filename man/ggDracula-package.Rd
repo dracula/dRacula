@@ -13,6 +13,7 @@ Useful links:
 \itemize{
   \item \url{https://github.com/dracula}
   \item \url{https://draculatheme.com}
+  \item \url{https://draculatheme.com/ggplot2}
   \item Report bugs at \url{https://github.com/dracula/ggplot2}
 }
 
