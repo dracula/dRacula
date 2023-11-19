@@ -4,6 +4,12 @@
 
 ![MPG Plots](screenshot.png)
 
+## Installation
+```R
+devtools::install_github("dracula/ggplot2")
+library(ggDracula)
+```
+
 ## theme_dracula
 
 `theme_dracula()` provides a minimal `ggplot2` theme with a Dracula-ish, dark backdrop.
@@ -28,6 +34,7 @@ See the [beginning of the README](#dracula-for-ggplot2) for the examples produce
 
 ```R
 library(ggplot2)
+library(ggDracula)
 library(dplyr)
 theme_set(theme_dracula())
 
