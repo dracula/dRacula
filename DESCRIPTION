@@ -3,6 +3,7 @@ Title: Dracula Palettes and ggplot2 Theme
 Version: 0.0.0.9000
 Authors@R: 
     person("Jordan", "Bradford", role = c("aut", "cre"))
+Maintainer: Jordan Bradford
 Description: Provides a Dracula theme for ggplot2 and Dracula style palette.
 License: MIT + file LICENSE
 BugReports: https://github.com/dracula/ggplot2
