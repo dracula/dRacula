@@ -1,0 +1,19 @@
+Package: ggDracula
+Title: Dracula Palettes and ggplot2 Theme
+Version: 0.0.1
+Authors@R: 
+    person("Jordan", "Bradford", email = "jrdnbradford@gmail.com", role = c("aut", "cre"))
+Maintainer: Jordan Bradford <jrdnbradford@gmail.com>
+Description: Provides a Dracula theme for ggplot2 and Dracula style palette.
+License: MIT + file LICENSE
+BugReports: https://github.com/dracula/ggplot2
+URL: https://github.com/dracula, https://draculatheme.com, https://draculatheme.com/ggplot2
+Encoding: UTF-8
+RoxygenNote: 7.2.1
+Imports:
+    ggplot2,
+    dplyr
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)

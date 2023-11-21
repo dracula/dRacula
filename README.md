@@ -1,33 +1,23 @@
-# Dracula for [ggplot2](https://github.com/tidyverse/ggplot2)
+# ggDracula: Dracula for [ggplot2](https://github.com/tidyverse/ggplot2)
 
 > A dark theme for [ggplot2](https://github.com/tidyverse/ggplot2) and `R` palette.
 
 ![MPG Plots](screenshot.png)
 
-## theme_dracula
+## Install
 
-`theme_dracula()` provides a minimal `ggplot2` theme with a Dracula-ish, dark backdrop.
-
-## dracula_palette
-
-`dracula_palette()` provides the more vibrant colors of Dracula to stand out in front of `theme_dracula()`.
-
-## Params
-
+All instructions can be found at [draculatheme.com/ggplot2](https://draculatheme.com/ggplot2).
 ```R
-palette <- dracula_palette(num_cols, var_type = c("discrete", "continuous"))
+devtools::install_github("dracula/ggplot2")
 ```
-
-Param `num_cols` - Number of colors to return. If missing, defaults to the length of the entire palette.
-
-Param `var_type` - Using `var_type = "discrete"` will return the number of colors provided by `num_cols`. `dracula_palette()` will recycle through the palette if `num_cols` > 7. Using `var_type = "continuous"` will create a color ramp with the number of colors provided by `num_cols`.
 
 ## Examples
 
-See the [beginning of the README](#dracula-for-ggplot2) for the examples produced.
+See the [beginning of the README](#ggdracula-dracula-for-ggplot2) for the examples produced.
 
 ```R
 library(ggplot2)
+library(ggDracula)
 library(dplyr)
 theme_set(theme_dracula())
 
@@ -52,10 +42,6 @@ mpg %>%
   geom_point() +
   scale_colour_gradientn(colors = dracula_palette(var_type = "continuous"))
 ```
-
-## Install
-
-All instructions can be found at [draculatheme.com/ggplot2](https://draculatheme.com/ggplot2).
 
 ## Team
 
