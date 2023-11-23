@@ -3,6 +3,9 @@
 #### Install using [devtools](https://github.com/r-lib/devtools)
 
 Install with `R` using `devtools`:
-    
+
     devtools::install_github("dracula/ggplot2")
 
+or `remotes`:
+
+    remotes::install_github("dracula/ggplot2")
