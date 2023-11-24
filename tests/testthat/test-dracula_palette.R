@@ -43,7 +43,7 @@ test_that("first value in dracula_palette() continuous ramp is first value in st
 
 test_that("last value in dracula_palette() continuous ramp is last value in standard palette", {
   expect_identical(
-    dracula_palette(num_cols = 20, var_type = "continuous")[20], 
+    dracula_palette(num_cols = 20, var_type = "continuous")[20],
     dracula_palette()[length(dracula_palette())]
   )
 })
