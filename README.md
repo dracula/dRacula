@@ -10,6 +10,10 @@ All instructions can be found at [draculatheme.com/ggplot2](https://draculatheme
 ```R
 devtools::install_github("dracula/ggplot2")
 ```
+or 
+```R
+remotes::install_github("dracula/ggplot2")
+```
 
 ## Examples
 
