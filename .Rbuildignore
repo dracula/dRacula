@@ -1,4 +1,7 @@
-^ggDracula\.Rproj$
+^.*\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^\.github$
+^\.pre-commit-config\.yaml$
+^renv$
+^renv\.lock$
