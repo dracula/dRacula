@@ -47,7 +47,7 @@ dracula_discrete_bright_palette <- function(n) {
   }
 
   if (n > 7) {
-    stop("You can't do that")
+    stop("WARNING: Cannot use n > 7")
   }
 
   dracula <- dracula_bright_palette()(n)

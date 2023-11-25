@@ -17,39 +17,49 @@ remotes::install_github("dracula/ggplot2")
 
 ## Examples
 
-See the [beginning of the README](#ggdracula-dracula-for-ggplot2) for the examples produced.
-
 ```R
+library(dplyr)
 library(ggplot2)
 library(ggDracula)
+
+set.seed(1)
+ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
+  geom_hex() + coord_fixed() +
+  ggtitle("scale_fill_dracula(discrete = FALSE)") +
+  scale_fill_dracula(discrete = FALSE) + theme_dracula()
+```
+![Hex ](/img/hex.png)
+
+```R
 library(dplyr)
-theme_set(theme_dracula())
+library(ggplot2)
+library(ggDracula)
 
-# Left bar chart
-mpg %>%
-  group_by(manufacturer) %>%
-  summarize(mean_hwy = mean(hwy)) %>%
-  ggplot(aes(x = manufacturer, y = mean_hwy, fill = manufacturer)) +
-  theme(legend.position = "none") +
-  coord_flip() +
-  geom_col() +
-  scale_fill_manual(
-    values = dracula_palette(
-      num_col  = nlevels(factor(mpg$manufacturer)),
-      var_type = "discrete"
-    )
-  )
+dsub <- subset(diamonds, x > 5 & x < 6 & y > 5 & y < 6)
+dsub$diff <- with(dsub, sqrt(abs(x - y)) * sign(x - y))
 
-p <- ggplot(mtcars, aes(wt, mpg))
-p + geom_point(size = 4, aes(colour = factor(cyl))) +
-    scale_color_viridis(discrete = TRUE) +
-    theme_bw()
-# Right scatterplot
+ggplot(dsub, aes(x, y, colour = diff)) +
+  geom_point() +
+  ggtitle("scale_color_dracula(discrete = FALSE)") +
+  scale_color_dracula(discrete = FALSE) +
+  theme_dracula()
+```
+![Point Plot](/img/diamond-point.png)
+
+```R
+library(dplyr)
+library(ggplot2)
+library(ggDracula)
+
 mpg %>%
   ggplot(aes(x = displ, y = cty, color = hwy)) +
   geom_point() +
-  scale_colour_gradientn(colors = dracula_palette(var_type = "continuous"))
+  ggtitle("scale_color_dracula(discrete = TRUE)") +
+  scale_color_dracula(discrete = FALSE) +
+  theme_dracula()
 ```
+![MGP Plot](/img/mpg.png)
+
 
 ## Team
 
