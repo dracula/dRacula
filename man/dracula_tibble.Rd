@@ -5,7 +5,7 @@
 \alias{dracula_tibble}
 \title{Dracula Tibble}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 7 rows and 2 columns.
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 7 rows and 4 columns.
 }
 \usage{
 dracula_tibble
@@ -14,6 +14,7 @@ dracula_tibble
 Dracula Tibble
 }
 \description{
-A Tibble of Dracula data
+A Tibble of Dracula data that includes the palette specification.
+See https://spec.draculatheme.com for details.
 }
 \keyword{datasets}

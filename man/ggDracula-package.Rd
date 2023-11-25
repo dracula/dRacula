@@ -6,7 +6,7 @@
 \alias{ggDracula-package}
 \title{ggDracula: Dracula Palettes and ggplot2 Theme}
 \description{
-Provides a Dracula theme for ggplot2 and Dracula style palette.
+Provides a Dracula ggplot2 theme and palette.
 }
 \seealso{
 Useful links:

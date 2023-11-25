@@ -1,6 +1,7 @@
 #' @title Dracula Tibble
 #'
-#' @description A Tibble of Dracula data
+#' @description A Tibble of Dracula data that includes the palette specification.
+#'  See https://spec.draculatheme.com for details.
 #'
 #' @importFrom tibble tribble
 #'
@@ -8,14 +9,14 @@
 #'
 #' @export
 dracula_tibble <- tribble(
-  ~palette,   ~hex,
-  "red",    "#FF5555",
-  "orange", "#FFB86C",
-  "yellow", "#F1FA8C",
-  "green",  "#50FA7B",
-  "purple", "#BD93F9",
-  "cyan",   "#8BE9FD",
-  "pink",   "#FF79C6"
+  ~palette,   ~hex,        ~rgb,                 ~hsl,
+  "red",    "#FF5555", "RGB(255, 85, 85)",   "HSL(0, 100, 67)",
+  "orange", "#FFB86C", "RGB(255, 184, 108)", "HSL(31, 100, 71)",
+  "yellow", "#F1FA8C", "RGB(241, 250, 140)", "HSL(65, 92, 76)",
+  "green",  "#50FA7B", "RGB(80, 250, 123)",  "HSL(135, 94, 65)",
+  "purple", "#BD93F9", "RGB(189, 147, 249)", "HSL(265, 89, 78)",
+  "cyan",   "#8BE9FD", "RGB(139, 233, 253)", "HSL(191, 97, 77)",
+  "pink",   "#FF79C6", "RGB(255, 121, 198)", "HSL(326, 100, 74)"
 )
 
 
