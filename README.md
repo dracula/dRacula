@@ -10,7 +10,7 @@ All instructions can be found at [draculatheme.com/ggplot2](https://draculatheme
 ```R
 devtools::install_github("dracula/ggplot2")
 ```
-or 
+or
 ```R
 remotes::install_github("dracula/ggplot2")
 ```
@@ -40,6 +40,10 @@ mpg %>%
     )
   )
 
+p <- ggplot(mtcars, aes(wt, mpg))
+p + geom_point(size = 4, aes(colour = factor(cyl))) +
+    scale_color_viridis(discrete = TRUE) +
+    theme_bw()
 # Right scatterplot
 mpg %>%
   ggplot(aes(x = displ, y = cty, color = hwy)) +
