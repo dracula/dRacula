@@ -4,7 +4,7 @@ Version: 0.5.1
 Authors@R:
     person("Jordan", "Bradford", email = "jrdnbradford@gmail.com", role = c("aut", "cre"))
 Maintainer: Jordan Bradford <jrdnbradford@gmail.com>
-Description: Provides a Dracula theme for ggplot2 and Dracula style palette.
+Description: Provides a Dracula ggplot2 theme and palette.
 License: MIT + file LICENSE
 BugReports: https://github.com/dracula/ggplot2/issues
 URL: https://github.com/dracula/ggplot2, https://github.com/dracula, https://draculatheme.com, https://draculatheme.com/ggplot2
