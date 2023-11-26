@@ -25,6 +25,8 @@ dracula_tibble <- tribble(
 #' @description Used in conjunction with `dracula_discrete_bright_palette` as an
 #'   internal closure for interfacing with `scale_fill_dracula` and `scale_color_dracula`.
 #'
+#' @noRd
+#'
 #' @importFrom dplyr pull
 dracula_bright_palette <- function() {
   function(n) {
@@ -40,6 +42,8 @@ dracula_bright_palette <- function() {
 #'
 #' @param n Number of colors to return.
 #'  If missing, defaults to the length of the entire palette
+#'
+#' @noRd
 #'
 #' @return Function for interfacing with scale functions
 dracula_discrete_bright_palette <- function(n) {
