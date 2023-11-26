@@ -29,6 +29,11 @@ scale_color_dracula <- function(..., discrete = FALSE, aesthetics = "color") {
   if (discrete) {
     discrete_scale(aesthetics, "dracula", dracula_discrete_bright_palette, ...)
   } else {
-    scale_colour_gradientn(colors =  pull(dracula_tibble, hex), aesthetics = aesthetics, ...)
+    scale_color_gradientn(colors =  pull(dracula_tibble, hex), aesthetics = aesthetics, ...)
   }
 }
+
+
+#' @aliases scale_color_dracula
+#' @export
+scale_colour_dracula <- scale_color_dracula

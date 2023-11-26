@@ -2,6 +2,7 @@
 
 export(dracula_tibble)
 export(scale_color_dracula)
+export(scale_colour_dracula)
 export(scale_fill_dracula)
 export(theme_dracula)
 importFrom(dplyr,pull)
