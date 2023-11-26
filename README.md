@@ -32,7 +32,9 @@ ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
   ggtitle("scale_fill_dracula(discrete = FALSE)") +
   scale_fill_dracula(discrete = FALSE) + theme_dracula()
 ```
-![Hex ](/img/hex.png)
+<p align="center">
+  <img src="img/hex.png" width="400"/>
+</p>
 
 ```R
 library(dplyr)
@@ -48,7 +50,9 @@ ggplot(dsub, aes(x, y, colour = diff)) +
   scale_color_dracula(discrete = FALSE) +
   theme_dracula()
 ```
-![Point Plot](/img/diamond-point.png)
+<p align="center">
+  <img src="img/diamond-point.png" width="400"/>
+</p>
 
 ```R
 library(dplyr)
@@ -56,13 +60,18 @@ library(ggplot2)
 library(ggDracula)
 
 mpg %>%
-  ggplot(aes(x = displ, y = cty, color = hwy)) +
-  geom_point() +
-  ggtitle("scale_color_dracula(discrete = TRUE)") +
-  scale_color_dracula(discrete = FALSE) +
+  filter(manufacturer %in% c("honda", "ford", "dodge", "audi")) %>%
+  group_by(manufacturer) %>%
+  summarize(mean_hwy = mean(hwy)) %>%
+  ggplot(aes(x = manufacturer, y = mean_hwy, fill = manufacturer)) +
+  ggtitle("scale_fill_dracula(discrete = TRUE)") +
+  coord_flip() + geom_col() +
+  scale_fill_dracula(discrete = TRUE) +
   theme_dracula()
 ```
-![MGP Plot](/img/mpg.png)
+<p align="center">
+  <img src="img/mpg.png" width="400"/>
+</p>
 
 ## Team
 
