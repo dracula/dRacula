@@ -4,6 +4,8 @@
 #' @param discrete Whether the scale is discrete. Defaults to `FALSE`
 #' @param aesthetics The aesthetics for the plot. Defaults to `fill`
 #'
+#' @rdname scale_dracula
+#'
 #' @importFrom ggplot2 scale_fill_gradientn scale_color_gradientn discrete_scale
 #'
 #' @export
@@ -22,6 +24,8 @@ scale_fill_dracula <- function(..., discrete = FALSE, aesthetics = "fill") {
 #' @param discrete Whether the scale is discrete. Defaults to `FALSE`
 #' @param aesthetics The aesthetics for the plot. Defaults to `color`
 #'
+#' @rdname scale_dracula
+#'
 #' @importFrom ggplot2 scale_fill_gradientn scale_color_gradientn discrete_scale
 #'
 #' @export
@@ -33,7 +37,7 @@ scale_color_dracula <- function(..., discrete = FALSE, aesthetics = "color") {
   }
 }
 
-
+#' @rdname scale_dracula
 #' @aliases scale_color_dracula
 #' @export
 scale_colour_dracula <- scale_color_dracula
