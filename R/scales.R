@@ -1,8 +1,9 @@
-#' @title Dracula Fill Scales for ggplot2
+#' @title Dracula Theme Scales for `ggplot2`
 #'
-#' @param ... Arguments passed on to `continuous_scale` in `scale_fill_gradientn` or to `discrete_scale`
-#' @param discrete Whether the scale is discrete. Defaults to `FALSE`
-#' @param aesthetics The aesthetics for the plot. Defaults to `fill`
+#' @param ... Parameters passed on to [ggplot2::discrete_scale()] if
+#'  `discrete == TRUE`, or to [ggplot2::scale_fill_gradientn()] if `discrete == FALSE`.
+#' @param discrete Whether the scale is discrete. Defaults to `FALSE`.
+#' @param aesthetics The aesthetics for the plot.
 #'
 #' @rdname scale_dracula
 #'
@@ -18,15 +19,7 @@ scale_fill_dracula <- function(..., discrete = FALSE, aesthetics = "fill") {
 }
 
 
-#' @title Dracula Color Scales for ggplot2
-#'
-#' @param ... Arguments passed on to `continuous_scale` in `scale_colour_gradientn` or to `discrete_scale`
-#' @param discrete Whether the scale is discrete. Defaults to `FALSE`
-#' @param aesthetics The aesthetics for the plot. Defaults to `color`
-#'
 #' @rdname scale_dracula
-#'
-#' @importFrom ggplot2 scale_fill_gradientn scale_color_gradientn discrete_scale
 #'
 #' @export
 scale_color_dracula <- function(..., discrete = FALSE, aesthetics = "color") {

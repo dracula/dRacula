@@ -3,8 +3,13 @@
 #' @description Provides a minimal `ggplot2` theme with a Dracula-ish, dark backdrop.
 #'
 #' @examples
-#' library(ggplot2)
+#' # Set the current `ggplot2` theme with `ggplot2::theme_set`:
+#' theme_set(theme_dracula())
+#'
+#' # Or set it for the plot in the pipeline:
 #' library(dplyr)
+#' library(ggDracula)
+#' library(ggplot2)
 #'
 #' mpg %>%
 #'   filter(manufacturer %in% c("honda", "ford", "dodge", "audi")) %>%

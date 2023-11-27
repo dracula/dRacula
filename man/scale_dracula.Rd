@@ -4,7 +4,7 @@
 \alias{scale_fill_dracula}
 \alias{scale_color_dracula}
 \alias{scale_colour_dracula}
-\title{Dracula Fill Scales for ggplot2}
+\title{Dracula Theme Scales for \code{ggplot2}}
 \usage{
 scale_fill_dracula(..., discrete = FALSE, aesthetics = "fill")
 
@@ -13,14 +13,13 @@ scale_color_dracula(..., discrete = FALSE, aesthetics = "color")
 scale_colour_dracula(..., discrete = FALSE, aesthetics = "color")
 }
 \arguments{
-\item{...}{Arguments passed on to \code{continuous_scale} in \code{scale_colour_gradientn} or to \code{discrete_scale}}
+\item{...}{Parameters passed on to \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}} if
+\code{discrete == TRUE}, or to \code{\link[ggplot2:scale_gradient]{ggplot2::scale_fill_gradientn()}} if \code{discrete == FALSE}.}
 
-\item{discrete}{Whether the scale is discrete. Defaults to \code{FALSE}}
+\item{discrete}{Whether the scale is discrete. Defaults to \code{FALSE}.}
 
-\item{aesthetics}{The aesthetics for the plot. Defaults to \code{color}}
+\item{aesthetics}{The aesthetics for the plot.}
 }
 \description{
-Dracula Fill Scales for ggplot2
-
-Dracula Color Scales for ggplot2
+Dracula Theme Scales for \code{ggplot2}
 }
