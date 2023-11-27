@@ -1,6 +1,6 @@
 Package: ggDracula
 Title: Dracula Palettes and ggplot2 Theme
-Version: 0.5.1
+Version: 0.5.2
 Authors@R:
     person("Jordan", "Bradford", email = "jrdnbradford@gmail.com", role = c("aut", "cre"))
 Maintainer: Jordan Bradford <jrdnbradford@gmail.com>
