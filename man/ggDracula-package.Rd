@@ -6,15 +6,16 @@
 \alias{ggDracula-package}
 \title{ggDracula: Dracula Palettes and ggplot2 Theme}
 \description{
-Provides a Dracula theme for ggplot2 and Dracula style palette.
+Provides a Dracula ggplot2 theme and palette.
 }
 \seealso{
 Useful links:
 \itemize{
+  \item \url{https://github.com/dracula/ggplot2}
   \item \url{https://github.com/dracula}
   \item \url{https://draculatheme.com}
   \item \url{https://draculatheme.com/ggplot2}
-  \item Report bugs at \url{https://github.com/dracula/ggplot2}
+  \item Report bugs at \url{https://github.com/dracula/ggplot2/issues}
 }
 
 }

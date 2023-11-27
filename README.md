@@ -2,7 +2,11 @@
 
 > A dark theme for [ggplot2](https://github.com/tidyverse/ggplot2) and `R` palette.
 
-![MPG Plots](screenshot.png)
+<p align="center">
+  <img src="img/dracula-hex-sticker.png" width="200" height="200"/>
+</p>
+
+> _Hex image courtesy of DALL·E 2_
 
 ## Install
 
@@ -10,42 +14,64 @@ All instructions can be found at [draculatheme.com/ggplot2](https://draculatheme
 ```R
 devtools::install_github("dracula/ggplot2")
 ```
-or 
+or
 ```R
 remotes::install_github("dracula/ggplot2")
 ```
 
 ## Examples
 
-See the [beginning of the README](#ggdracula-dracula-for-ggplot2) for the examples produced.
-
 ```R
+library(dplyr)
 library(ggplot2)
 library(ggDracula)
-library(dplyr)
-theme_set(theme_dracula())
 
-# Left bar chart
+set.seed(1)
+ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
+  geom_hex() + coord_fixed() +
+  ggtitle("scale_fill_dracula(discrete = FALSE)") +
+  scale_fill_dracula(discrete = FALSE) + theme_dracula()
+```
+<p align="center">
+  <img src="img/hex.png" width="400"/>
+</p>
+
+```R
+library(dplyr)
+library(ggplot2)
+library(ggDracula)
+
+dsub <- subset(diamonds, x > 5 & x < 6 & y > 5 & y < 6)
+dsub$diff <- with(dsub, sqrt(abs(x - y)) * sign(x - y))
+
+ggplot(dsub, aes(x, y, colour = diff)) +
+  geom_point() +
+  ggtitle("scale_color_dracula(discrete = FALSE)") +
+  scale_color_dracula(discrete = FALSE) +
+  theme_dracula()
+```
+<p align="center">
+  <img src="img/diamond-point.png" width="400"/>
+</p>
+
+```R
+library(dplyr)
+library(ggplot2)
+library(ggDracula)
+
 mpg %>%
+  filter(manufacturer %in% c("honda", "ford", "dodge", "audi")) %>%
   group_by(manufacturer) %>%
   summarize(mean_hwy = mean(hwy)) %>%
   ggplot(aes(x = manufacturer, y = mean_hwy, fill = manufacturer)) +
-  theme(legend.position = "none") +
-  coord_flip() +
-  geom_col() +
-  scale_fill_manual(
-    values = dracula_palette(
-      num_col  = nlevels(factor(mpg$manufacturer)),
-      var_type = "discrete"
-    )
-  )
-
-# Right scatterplot
-mpg %>%
-  ggplot(aes(x = displ, y = cty, color = hwy)) +
-  geom_point() +
-  scale_colour_gradientn(colors = dracula_palette(var_type = "continuous"))
+  ggtitle("scale_fill_dracula(discrete = TRUE)") +
+  coord_flip() + geom_col() +
+  scale_fill_dracula(discrete = TRUE) +
+  theme_dracula()
 ```
+<p align="center">
+  <img src="img/mpg.png" width="400"/>
+</p>
 
 ## Team
 
@@ -60,6 +86,10 @@ This theme is maintained by the following person(s) and a bunch of [awesome cont
 - [Twitter](https://twitter.com/draculatheme) - Best for getting updates about themes and new stuff.
 - [GitHub](https://github.com/dracula/dracula-theme/discussions) - Best for asking questions and discussing issues.
 - [Discord](https://draculatheme.com/discord-invite) - Best for hanging out with the community.
+
+## Acknowledgments
+
+I'm indebted to the {[viridis](https://sjmgarnier.github.io/viridis)} and {[wesanderson](https://github.com/karthik/wesanderson)} `R` packages for inspiration and several plot examples.
 
 ## License
 
