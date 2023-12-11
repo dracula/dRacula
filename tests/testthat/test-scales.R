@@ -53,3 +53,18 @@ test_that("scale_color_dracula(discrete = TRUE)", {
 
   expect_doppelganger("scale_color_dracula(discrete = TRUE)", p)
 })
+
+
+test_that("lm model plot", {
+  lm <- lm(mpg ~ wt, data = mtcars)
+
+  p <- ggplot(mtcars %>% mutate(resid = abs(resid(lm)), fitted = fitted(lm))) +
+    geom_line(aes(wt, fitted)) +
+    geom_point(aes(wt, mpg, color = resid)) +
+    scale_color_dracula(discrete = FALSE) +
+    theme_dracula() +
+    ggtitle("mtcars: MPG by Weight") +
+    labs(x = "Weight", y = "MPG", color = "Residuals")
+
+  expect_doppelganger("mtcars: MPG by Weight", p)
+})
