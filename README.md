@@ -88,6 +88,9 @@ This theme is maintained by the following person(s) and a bunch of [awesome cont
 - [GitHub](https://github.com/dracula/dracula-theme/discussions) - Best for asking questions and discussing issues.
 - [Discord](https://draculatheme.com/discord-invite) - Best for hanging out with the community.
 
+## Contributing
+See [`CONTRIBUTING.md`](/.github/CONTRIBUTING.md).
+
 ## Acknowledgments
 
 I'm indebted to the {[viridis](https://sjmgarnier.github.io/viridis)} and {[wesanderson](https://github.com/karthik/wesanderson)} `R` packages for inspiration and several plot examples.
