@@ -65,9 +65,10 @@ mpg %>%
   summarize(mean_hwy = mean(hwy)) %>%
   ggplot(aes(x = manufacturer, y = mean_hwy, fill = manufacturer)) +
   ggtitle("scale_fill_dracula(discrete = TRUE)") +
+  theme_dracula() +
+  theme(axis.text.y = element_blank(), axis.title.y = element_blank()) +
   coord_flip() + geom_col() +
-  scale_fill_dracula(discrete = TRUE) +
-  theme_dracula()
+  scale_fill_dracula(discrete = TRUE)
 ```
 <p align="center">
   <img src="img/mpg.png" width="400"/>
