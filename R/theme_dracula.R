@@ -30,7 +30,7 @@ theme_dracula <- function() {
       strip.text = element_text(face = "bold", colour = "#6272A4"),
 
       legend.background     = element_rect(fill = "transparent", color = NA),
-      legend.box.background = element_rect(fill = "#44475A", color = "#f8f8f2", linewidth = 1),
+      legend.box.background = element_rect(fill = "#44475A", color = "#f8f8f2", linewidth = 0.25),
       legend.key            = element_rect(fill = "transparent", color = NA),
       legend.text           = element_text(color = "#f8f8f2"),
       legend.title          = element_text(face = "bold", color = "#6272A4"),
