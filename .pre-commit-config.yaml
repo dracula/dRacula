@@ -1,14 +1,15 @@
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.5.0 # https://github.com/pre-commit/pre-commit-hooks/releases
+  rev: v4.6.0
   hooks:
-    - id: trailing-whitespace
-    - id: no-commit-to-branch
-    # - id: ...
+  - id: trailing-whitespace
+  - id: no-commit-to-branch
+  - id: end-of-file-fixer
+
 - repo: https://github.com/lorenzwalthert/precommit
-  rev: v0.3.2
+  rev: v0.4.2
   hooks:
   - id: parsable-R
   - id: use-tidy-description
   - id: roxygenize
-  # - id: ...
+  - id: no-print-statement
