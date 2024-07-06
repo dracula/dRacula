@@ -28,7 +28,7 @@ remotes::install_github("dracula/ggplot2")
 ``` r
 library(dplyr)
 library(ggplot2)
-library(ggDracula)
+# library(ggDracula)
 
 set.seed(1)
 ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
