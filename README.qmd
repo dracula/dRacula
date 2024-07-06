@@ -38,6 +38,7 @@ remotes::install_github("dracula/ggplot2")
 ```{R rnorm-hex-example, output=TRUE, eval=TRUE}
 #| fig-width: 3.5
 #| fig-height: 3
+#| dpi: 150
 library(dplyr)
 library(ggplot2)
 # library(ggDracula)
@@ -51,8 +52,9 @@ ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
 
 
 ```{R mpg-lm-example, output=TRUE, eval=TRUE}
-#| fig-width: 4.5
+#| fig-width: 3.5
 #| fig-height: 3
+#| dpi: 150
 library(dplyr)
 library(ggplot2)
 library(ggDracula)
