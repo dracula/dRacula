@@ -1,6 +1,10 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
-^LICENSE\.md$
+^INSTALL\.md$
+^README\.qmd$
+^screenshot\.png$
+^data-raw$
+^.lintr$
 ^\.github$
 ^\.pre-commit-config\.yaml$
 ^renv$
