@@ -11,6 +11,7 @@ Provides a minimal \code{ggplot2} theme with a Dracula-ish, dark backdrop.
 }
 \examples{
 # Set the current `ggplot2` theme with `ggplot2::theme_set`:
+library(ggplot2)
 theme_set(theme_dracula())
 
 # Or set it for the plot in the pipeline:
