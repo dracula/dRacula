@@ -2,11 +2,7 @@
 
 > A dark theme for [ggplot2](https://github.com/tidyverse/ggplot2) and `R` palette.
 
-<p align="center">
-  <img src="img/dracula-hex-sticker.png" width="200" height="200"/>
-</p>
-
-> _Hex image courtesy of DALL·E 2_
+<img src="man/figures/logo.svg" align="right" height="139" alt="Dracula logo in an R hex sticker" />
 
 ## Install
 
