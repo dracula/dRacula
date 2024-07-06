@@ -1,0 +1,97 @@
+---
+title: "{ggDracula} | Dracula Theme for R"
+format: gfm
+---
+
+<!-- README.md is rendered from README.qmd. Edit README.qmd and render to update README.md -->
+
+```{R options, echo=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  message = FALSE,
+  warning = FALSE
+)
+```
+
+<img src="man/figures/logo.svg" align="right" height="139" alt="Dracula logo in an R hex sticker" />
+
+> A dark theme for R, including a [ggplot2](https://github.com/tidyverse/ggplot2) theme and palette.
+
+## Install
+
+```{R load-package, echo=FALSE}
+devtools::load_all()
+```
+
+All instructions can be found at [draculatheme.com/ggplot2](https://draculatheme.com/ggplot2).
+```{R devtools-install, echo=TRUE, eval=FALSE, output=FALSE}
+devtools::install_github("dracula/ggplot2")
+```
+or
+```{R  remotes-install, echo=TRUE, eval=FALSE, output=FALSE}
+remotes::install_github("dracula/ggplot2")
+```
+
+## Examples
+
+```{R rnorm-hex-example, output=TRUE, eval=TRUE}
+#| fig-width: 3.5
+#| fig-height: 3
+#| dpi: 150
+library(dplyr)
+library(ggplot2)
+# library(ggDracula)
+
+set.seed(1)
+ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
+  geom_hex() + coord_fixed() +
+  ggtitle("RNORM Hex") +
+  scale_fill_dracula(discrete = FALSE) + theme_dracula()
+```
+
+
+```{R mpg-lm-example, output=TRUE, eval=TRUE}
+#| fig-width: 3.5
+#| fig-height: 3
+#| dpi: 150
+library(dplyr)
+library(ggplot2)
+library(ggDracula)
+
+lm <- lm(mpg ~ wt, data = mtcars)
+
+ggplot(mtcars %>% mutate(resid = abs(resid(lm)), fitted = fitted(lm))) +
+  geom_line(aes(wt, fitted)) +
+  geom_point(aes(wt, mpg, color = resid)) +
+  scale_color_dracula(discrete = FALSE) +
+  theme_dracula() +
+  ggtitle("mtcars: MPG by Weight") +
+  labs(x = "Weight", y = "MPG", color = "Residuals")
+```
+
+
+## Team
+
+This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/ggplot2/graphs/contributors).
+
+| [![Jordan Bradford](https://github.com/jrdnbradford.png?size=100)](https://github.com/jrdnbradford) |
+| --------------------------------------------------------------------------------------------------- |
+| [Jordan Bradford](https://github.com/jrdnbradford)                                                  |
+
+## Community
+
+- [Twitter](https://twitter.com/draculatheme) - Best for getting updates about themes and new stuff.
+- [GitHub](https://github.com/dracula/dracula-theme/discussions) - Best for asking questions and discussing issues.
+- [Discord](https://draculatheme.com/discord-invite) - Best for hanging out with the community.
+
+## Contributing
+See [`CONTRIBUTING.md`](/.github/CONTRIBUTING.md).
+
+## Acknowledgments
+
+I'm indebted to the {[viridis](https://sjmgarnier.github.io/viridis)} and {[wesanderson](https://github.com/karthik/wesanderson)} `R` packages for inspiration and several plot examples.
+
+## License
+
+[MIT License](./LICENSE)
