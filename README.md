@@ -1,26 +1,25 @@
-# {ggDracula} \| Dracula Theme for R
+# {dRacula} \| Dracula Theme for R
 
 
 <!-- README.md is rendered from README.qmd. Edit README.qmd and render to update README.md -->
 
 <img src="man/figures/logo.svg" align="right" height="139" alt="Dracula logo in an R hex sticker" />
 
-> A dark theme for R, including a
-> [ggplot2](https://github.com/tidyverse/ggplot2) theme and palette.
+> All things Dracula themed for R
 
 ## Install
 
 All instructions can be found at
-[draculatheme.com/ggplot2](https://draculatheme.com/ggplot2).
+[draculatheme.com/R](https://draculatheme.com/R).
 
 ``` r
-devtools::install_github("dracula/ggplot2")
+devtools::install_github("dracula/dRacula")
 ```
 
 or
 
 ``` r
-remotes::install_github("dracula/ggplot2")
+remotes::install_github("dracula/dRacula")
 ```
 
 ## Examples
@@ -28,7 +27,7 @@ remotes::install_github("dracula/ggplot2")
 ``` r
 library(dplyr)
 library(ggplot2)
-# library(ggDracula)
+library(dRacula)
 
 set.seed(1)
 ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
@@ -42,7 +41,7 @@ ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
 ``` r
 library(dplyr)
 library(ggplot2)
-library(ggDracula)
+library(dRacula)
 
 lm <- lm(mpg ~ wt, data = mtcars)
 
@@ -61,7 +60,7 @@ ggplot(mtcars %>% mutate(resid = abs(resid(lm)), fitted = fitted(lm))) +
 
 This theme is maintained by the following person(s) and a bunch of
 [awesome
-contributors](https://github.com/dracula/ggplot2/graphs/contributors).
+contributors](https://github.com/dracula/dRacula/graphs/contributors).
 
 | [![Jordan Bradford](https://github.com/jrdnbradford.png?size=100)](https://github.com/jrdnbradford) |
 |----|
@@ -69,8 +68,8 @@ contributors](https://github.com/dracula/ggplot2/graphs/contributors).
 
 ## Community
 
-- [Twitter](https://twitter.com/draculatheme) - Best for getting updates
-  about themes and new stuff.
+- [X](https://x.com/draculatheme) - Best for getting updates about
+  themes and new stuff.
 - [GitHub](https://github.com/dracula/dracula-theme/discussions) - Best
   for asking questions and discussing issues.
 - [Discord](https://draculatheme.com/discord-invite) - Best for hanging

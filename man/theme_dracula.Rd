@@ -16,7 +16,7 @@ theme_set(theme_dracula())
 
 # Or set it for the plot in the pipeline:
 library(dplyr)
-library(ggDracula)
+library(dRacula)
 library(ggplot2)
 
 mpg \%>\%

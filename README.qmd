@@ -1,5 +1,5 @@
 ---
-title: "{ggDracula} | Dracula Theme for R"
+title: "{dRacula} | Dracula Theme for R"
 format: gfm
 ---
 
@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 <img src="man/figures/logo.svg" align="right" height="139" alt="Dracula logo in an R hex sticker" />
 
-> A dark theme for R, including a [ggplot2](https://github.com/tidyverse/ggplot2) theme and palette.
+> All things Dracula themed for R
 
 ## Install
 
@@ -24,13 +24,13 @@ knitr::opts_chunk$set(
 devtools::load_all()
 ```
 
-All instructions can be found at [draculatheme.com/ggplot2](https://draculatheme.com/ggplot2).
+All instructions can be found at [draculatheme.com/R](https://draculatheme.com/R).
 ```{R devtools-install, echo=TRUE, eval=FALSE, output=FALSE}
-devtools::install_github("dracula/ggplot2")
+devtools::install_github("dracula/dRacula")
 ```
 or
 ```{R  remotes-install, echo=TRUE, eval=FALSE, output=FALSE}
-remotes::install_github("dracula/ggplot2")
+remotes::install_github("dracula/dRacula")
 ```
 
 ## Examples
@@ -41,7 +41,7 @@ remotes::install_github("dracula/ggplot2")
 #| dpi: 150
 library(dplyr)
 library(ggplot2)
-# library(ggDracula)
+library(dRacula)
 
 set.seed(1)
 ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
@@ -57,7 +57,7 @@ ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
 #| dpi: 150
 library(dplyr)
 library(ggplot2)
-library(ggDracula)
+library(dRacula)
 
 lm <- lm(mpg ~ wt, data = mtcars)
 
@@ -73,7 +73,7 @@ ggplot(mtcars %>% mutate(resid = abs(resid(lm)), fitted = fitted(lm))) +
 
 ## Team
 
-This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/ggplot2/graphs/contributors).
+This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/dRacula/graphs/contributors).
 
 | [![Jordan Bradford](https://github.com/jrdnbradford.png?size=100)](https://github.com/jrdnbradford) |
 | --------------------------------------------------------------------------------------------------- |
@@ -81,7 +81,7 @@ This theme is maintained by the following person(s) and a bunch of [awesome cont
 
 ## Community
 
-- [Twitter](https://twitter.com/draculatheme) - Best for getting updates about themes and new stuff.
+- [X](https://x.com/draculatheme) - Best for getting updates about themes and new stuff.
 - [GitHub](https://github.com/dracula/dracula-theme/discussions) - Best for asking questions and discussing issues.
 - [Discord](https://draculatheme.com/discord-invite) - Best for hanging out with the community.
 

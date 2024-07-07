@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/reference/test_package.html#special-files
 
 library(testthat)
-library(ggDracula)
+library(dRacula)
 
-test_check("ggDracula")
+test_check("dRacula")

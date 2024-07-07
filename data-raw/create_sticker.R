@@ -6,7 +6,7 @@ download.file(dracula_url, signature_dest_path)
 
 hexSticker::sticker(
   signature_dest_path,
-  package = "ggDracula",
+  package = "dRacula",
   spotlight = FALSE,
   h_size = 1.5,
   h_color = "black",
@@ -20,7 +20,7 @@ hexSticker::sticker(
   u_y = 0.1,
   u_color = "black",
   filename = raw_log_path,
-  dpi: 600
+  dpi = 600
 )
 
 usethis::use_logo(raw_log_path)

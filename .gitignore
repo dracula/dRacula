@@ -3,6 +3,7 @@
 .RData
 .Ruserdata
 .httr-oauth
+/.quarto/
 
 # Ignore snapshots created by testthat and vdiffr
 _snaps/
