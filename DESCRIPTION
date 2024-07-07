@@ -4,7 +4,7 @@ Version: 0.5.4
 Authors@R:
     person("Jordan", "Bradford", email = "jrdnbradford@gmail.com", role = c("aut", "cre"))
 Maintainer: Jordan Bradford <jrdnbradford@gmail.com>
-Description: All things Dracula theme for R
+Description: Dracula theme for all things R.
 License: MIT + file LICENSE
 BugReports: https://github.com/dracula/dRacula/issues
 URL: https://github.com/dracula/dRacula, https://github.com/dracula, https://draculatheme.com, https://draculatheme.com/dRacula
