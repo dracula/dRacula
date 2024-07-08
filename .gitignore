@@ -4,5 +4,4 @@
 .Ruserdata
 .httr-oauth
 
-# Ignore snapshots created by testthat and vdiffr
-_snaps/
+/.quarto/

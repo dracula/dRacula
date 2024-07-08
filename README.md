@@ -3,6 +3,8 @@
 
 <!-- README.md is rendered from README.qmd. Edit README.qmd and render to update README.md -->
 
+[![R-CMD-check](https://github.com/dracula/ggplot2/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/dracula/ggplot2/actions/workflows/R-CMD-check.yaml)
+
 <img src="man/figures/logo.svg" align="right" height="139" alt="Dracula logo in an R hex sticker" />
 
 > A dark theme for R, including a
