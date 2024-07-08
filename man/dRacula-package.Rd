@@ -6,7 +6,7 @@
 \alias{dRacula-package}
 \title{dRacula: Dracula theme for R}
 \description{
-All things Dracula theme for R
+Dracula theme for all things R.
 }
 \seealso{
 Useful links:
