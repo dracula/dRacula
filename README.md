@@ -1,9 +1,8 @@
-# {dRacula} \| Dracula Theme for R
 
 
 <!-- README.md is rendered from README.qmd. Edit README.qmd and render to update README.md -->
 
-<img src="man/figures/logo.svg" align="right" height="139" alt="Dracula logo in an R hex sticker" />
+# {`dRacula`} \| Dracula Theme for R <a href="https://draculatheme.com/"><img src="man/figures/logo.svg" align="right" height="139" alt="Dracula logo in an R hex sticker"/></a>
 
 > All things Dracula themed for R
 
