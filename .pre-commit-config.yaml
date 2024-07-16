@@ -3,6 +3,7 @@ repos:
   rev: v4.6.0
   hooks:
   - id: trailing-whitespace
+    exclude: ^renv/activate.R$
   - id: no-commit-to-branch
   - id: end-of-file-fixer
 
@@ -13,3 +14,4 @@ repos:
   - id: use-tidy-description
   - id: roxygenize
   - id: no-print-statement
+    exclude: ^renv/activate.R$
