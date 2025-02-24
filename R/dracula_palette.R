@@ -30,7 +30,7 @@ dracula_tibble <- tribble(
 #' @importFrom dplyr pull
 dracula_bright_palette <- function() {
   function(n) {
-    pull(dracula_tibble, hex)[1:n]
+    pull(dracula_tibble, "hex")[1:n]
   }
 }
 
