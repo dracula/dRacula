@@ -14,7 +14,7 @@ scale_fill_dracula <- function(..., discrete = FALSE, aesthetics = "fill") {
   if (discrete) {
     discrete_scale(aesthetics, palette = dracula_discrete_bright_palette, ...)
   } else {
-    scale_fill_gradientn(colors = pull(dracula_tibble, hex), aesthetics = aesthetics, ...)
+    scale_fill_gradientn(colors = pull(dracula_tibble, "hex"), aesthetics = aesthetics, ...)
   }
 }
 
@@ -26,7 +26,7 @@ scale_color_dracula <- function(..., discrete = FALSE, aesthetics = "color") {
   if (discrete) {
     discrete_scale(aesthetics, palette = dracula_discrete_bright_palette, ...)
   } else {
-    scale_color_gradientn(colors =  pull(dracula_tibble, hex), aesthetics = aesthetics, ...)
+    scale_color_gradientn(colors =  pull(dracula_tibble, "hex"), aesthetics = aesthetics, ...)
   }
 }
 
