@@ -23,7 +23,7 @@ color:
   secondary: cyan
   tertiary: blue-grey
   success: green
-  info: blue
+  info: blue-grey
   warning: orange
   danger: red
   light: yellow
