@@ -1,0 +1,76 @@
+meta:
+  name:
+    short: Dracula
+    full: Dracula
+  link:
+    home: https://draculatheme.com/dRacula
+    github: https://github.com/dracula/dRacula
+
+color:
+  palette:
+    black: "#282A36"
+    white: "#F8F8F2"
+    dark-grey: "#44475A"
+    blue-grey: "#6272A4"
+    red: "#FF5555"
+    orange: "#FFB86C"
+    yellow: "#F1FA8C"
+    green: "#50FA7B"
+    purple: "#BD93F9"
+    cyan: "#8BE9FD"
+    pink: "#FF79C6"
+    background: "#282A36"
+    foreground: "#F8F8F2"
+
+  primary: purple
+  secondary: cyan
+  tertiary: blue-grey
+  success: green
+  info: blue-grey
+  warning: orange
+  danger: red
+  light: white
+  dark: black
+
+typography:
+  fonts:
+    - family: Fira Code
+      source: google
+      weight: [400, 500, 600]
+      style: [normal, italic]
+    - family: Inter
+      source: google
+      weight: [400, 600, 700]
+      style: [normal, italic]
+
+  base:
+    family: Inter
+    weight: 400
+    size: 16px
+    line-height: 1.5
+
+  headings:
+    family: Fira Code
+    weight: 600
+    line-height: 1.2
+    color: primary
+
+  monospace:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+
+  link:
+    weight: 600
+    color: pink
+    decoration: underline
+
+defaults:
+  bootstrap:
+    defaults:
+      navbar-hover-color: $brand-pink
+  shiny:
+    theme:
+      preset: shiny
+      rules: |
+        .navbar-brand { color: $brand-pink }
