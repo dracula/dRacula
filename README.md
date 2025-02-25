@@ -1,5 +1,4 @@
 
-
 <!-- README.md is rendered from README.qmd. Edit README.qmd and render to update README.md -->
 
 # {`dRacula`} \| Dracula Theme for R <a href="https://draculatheme.com/"><img src="man/figures/logo.svg" align="right" height="139" alt="Dracula logo in an R hex sticker"/></a>
@@ -25,19 +24,19 @@ remotes::install_github("dracula/dRacula")
 
 ## Examples
 
-``` r
-library(dplyr)
-library(ggplot2)
-library(dRacula)
+Add a Dracula-themed `_brand.yaml` to your project:
 
-set.seed(1)
-ggplot(data.frame(x = rnorm(10000), y = rnorm(10000)), aes(x = x, y = y)) +
-  geom_hex() + coord_fixed() +
-  ggtitle("RNORM Hex") +
-  scale_fill_dracula(discrete = FALSE) + theme_dracula()
+``` r
+library(dRacula)
+dracula_brand()
 ```
 
-![](README_files/figure-commonmark/rnorm-hex-example-1.png)
+<p align="center">
+
+<img src="./man/figures/brand.png" alt="Dracula-branded Shiny App" width="500" height="600">
+</p>
+
+Apply the Dracula theme and color scale to a linear regression plot:
 
 ``` r
 library(dplyr)
@@ -55,7 +54,39 @@ ggplot(mtcars %>% mutate(resid = abs(resid(lm)), fitted = fitted(lm))) +
   labs(x = "Weight", y = "MPG", color = "Residuals")
 ```
 
-![](README_files/figure-commonmark/mpg-lm-example-1.png)
+<img src="man/figures/README/mpg-lm-example-1.png" width="480" style="display: block; margin: auto;" />
+
+Apply the Dracula palette and theme to proportional stacked area chart:
+
+``` r
+library(dplyr)
+library(ggplot2)
+library(dRacula)
+
+set.seed(1)
+time <- rep(seq(1, 7), each = 5)
+value <- runif(35, 10, 100)
+group <- rep(LETTERS[1:5], times = 7)
+
+data <- data.frame(time, value, group) %>%
+  group_by(time, group) %>%
+  summarise(n = sum(value), .groups = "drop") %>%
+  mutate(percentage = n / sum(n))
+
+ggplot(data, aes(x = time, y = percentage, fill = group)) +
+  geom_area(alpha = 0.7, color = "black", linewidth = 0.4) +
+  scale_fill_dracula(discrete = TRUE) +
+  labs(
+    title = "Proportional Stacked Area Chart",
+    x = "Time",
+    y = "Proportion",
+    fill = "Group"
+  ) +
+  theme_dracula() +
+  theme(legend.position = "bottom")
+```
+
+<img src="man/figures/README/proportion-1.png" width="480" style="display: block; margin: auto;" />
 
 ## Team
 
@@ -78,7 +109,7 @@ contributors](https://github.com/dracula/dRacula/graphs/contributors).
 
 ## Contributing
 
-See [`CONTRIBUTING.md`](./.github/CONTRIBUTING.md).
+See [`CONTRIBUTING.md`](/.github/CONTRIBUTING.md).
 
 ## Acknowledgments
 
