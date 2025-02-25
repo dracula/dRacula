@@ -42,6 +42,10 @@ typography:
       source: google
       weight: [400, 600, 700]
       style: [normal, italic]
+    - family: Share Tech Mono
+      source: google
+      weight: [400]
+      style: [normal]
 
   base:
     family: Inter
@@ -56,9 +60,21 @@ typography:
     color: primary
 
   monospace:
-    family: Fira Code
-    weight: 400
+    family: Share Tech Mono
     size: 0.9em
+    weight: 400
+
+  monospace-inline:
+    family: Share Tech Mono
+    weight: 400
+    background-color: blue-grey
+
+  monospace-block:
+    family: Share Tech Mono
+    size: 1.1em
+    weight: 400
+    background-color: blue-grey
+    line-height: 1.4
 
   link:
     weight: 600
