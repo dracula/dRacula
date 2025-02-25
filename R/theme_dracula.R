@@ -2,6 +2,8 @@
 #'
 #' @description Provides a minimal `ggplot2` theme with a Dracula-ish, dark backdrop.
 #'
+#' @importFrom ggplot2 '%+replace%' theme element_text element_rect element_line element_blank theme_minimal
+#'
 #' @examples
 #' # Set the current `ggplot2` theme with `ggplot2::theme_set`:
 #' library(ggplot2)
