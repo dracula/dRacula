@@ -2,6 +2,9 @@ meta:
   name:
     short: Dracula
     full: Dracula
+  link:
+    home: https://draculatheme.com/dRacula
+    github: https://github.com/dracula/dRacula
 
 color:
   palette:
@@ -26,7 +29,7 @@ color:
   info: blue-grey
   warning: orange
   danger: red
-  light: yellow
+  light: white
   dark: black
 
 typography:
@@ -65,6 +68,9 @@ typography:
 defaults:
   bootstrap:
     defaults:
-      navbar-bg: $brand-background
-      navbar-color: $brand-foreground
       navbar-hover-color: $brand-pink
+  shiny:
+    theme:
+      preset: shiny
+      rules: |
+        .navbar-brand { color: $brand-pink }
