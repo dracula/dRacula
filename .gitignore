@@ -1,6 +1,7 @@
 .Rproj.user
 .Rhistory
 .RData
+renv
 .Ruserdata
 .httr-oauth
 /.quarto/
