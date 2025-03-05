@@ -1,7 +1,7 @@
 meta:
   name:
     short: Dracula
-    full: Dracula
+    full: Dracula Theme
   link:
     home: https://draculatheme.com/dRacula
     github: https://github.com/dracula/dRacula
@@ -24,12 +24,12 @@ color:
 
   primary: purple
   secondary: cyan
-  tertiary: blue-grey
+  tertiary: red
   success: green
   info: blue-grey
   warning: orange
   danger: red
-  light: white
+  light: purple
   dark: black
 
 typography:
@@ -67,14 +67,16 @@ typography:
   monospace-inline:
     family: Share Tech Mono
     weight: 400
+    color: cyan
     background-color: blue-grey
 
   monospace-block:
     family: Share Tech Mono
     size: 1.1em
     weight: 400
-    background-color: blue-grey
     line-height: 1.4
+    color: cyan
+    background-color: dark-grey
 
   link:
     weight: 600
