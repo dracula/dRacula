@@ -1,0 +1,5 @@
+"ignoredFiles" : [
+  "man/figures/*",
+  "data-raw/stickers/*",
+  "/tests/testthat/_snaps/*"
+]
