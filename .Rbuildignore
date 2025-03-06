@@ -2,6 +2,7 @@
 ^\.Rproj\.user$
 ^INSTALL\.md$
 ^README\.qmd$
+^README\.Rmd$
 ^README_files$
 ^screenshot\.png$
 ^data-raw$
